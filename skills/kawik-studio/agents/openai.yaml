@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kawik Studio — Kasha"
+  short_description: "Roblox building, modeling and Luau workflows"
+  default_prompt: "Use $kawik-studio to implement this Roblox change with the available tools and verify the result."
