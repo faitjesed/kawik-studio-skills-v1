@@ -14,3 +14,15 @@
 ## English-language update
 
 README, discovery description, skill heading, and display name use English. All package text files were checked for remaining Cyrillic characters; none were found. Package and standard skill validators passed again. The installed skill matches the packaged source.
+
+## Complete bundle update
+
+- 29 original Roblox specialists included, plus Kawik Studio: 30 skills total.
+- All 58 bundled specialist files match the installed originals byte for byte.
+- Empty-directory installation produced all 30 skills and exact source contents.
+- Reinstalling identical copies made no content changes.
+- A modified existing skill caused a preflight refusal; another missing skill was not installed and no existing content changed.
+- Dry-run created no destination directory.
+- All skill entrypoints and local document links passed package validation.
+- Kawik Studio passed the standard skill-creator validator again.
+- Existing WebStorm project changes were left untouched. No commit or push was performed.

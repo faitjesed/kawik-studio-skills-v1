@@ -2,6 +2,7 @@
 """Validate this package's concrete metadata and local document links."""
 from pathlib import Path
 import re
+import json
 import sys
 
 
@@ -9,6 +10,18 @@ def main():
     root = Path(__file__).resolve().parents[1]
     skill = root / "skills" / "kawik-studio"
     errors = []
+    names = json.loads((root / "skills.json").read_text())["skills"]
+    actual = {p.name for p in (root / "skills").iterdir() if p.is_dir()}
+    if len(names) != len(set(names)) or set(names) != actual:
+        errors.append("Skill inventory does not match bundled directories")
+    for name in names:
+        entry_file = root / "skills" / name / "SKILL.md"
+        if not entry_file.is_file():
+            errors.append(f"Missing entrypoint: {name}")
+            continue
+        content = entry_file.read_text()
+        if not re.match(r"\A---\n.*?^name: " + re.escape(name) + r"$.*?^description: .+?\n.*?^---", content, re.S | re.M):
+            errors.append(f"Invalid name/description frontmatter: {name}")
     required = ["SKILL.md", "agents/openai.yaml", "references/routing.md",
                 "references/modeling.md", "references/studio.md", "references/engineering.md"]
     for name in required:

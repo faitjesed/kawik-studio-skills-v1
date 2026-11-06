@@ -19,4 +19,4 @@ These are realistic manual checks of the instructions, not a claim that an autom
 
 ## Package checks
 
-Run `python3 scripts/validate.py`. Test installation into a temporary destination, then repeat installation and confirm it refuses to replace existing contents. Run `--dry-run` into a nonexistent destination and confirm no directory was created. These tests concern packaging and installation only.
+Run `python3 scripts/validate.py`. Test installation into a temporary destination, then repeat installation and confirm identical copies are skipped. Change one installed copy and confirm the installer refuses the entire operation before installing any missing skills. Run `--dry-run` into a nonexistent destination and confirm no directory was created. These tests concern packaging and installation only.

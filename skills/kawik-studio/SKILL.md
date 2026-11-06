@@ -1,6 +1,6 @@
 ---
 name: kawik-studio
-description: Build, improve, or review Roblox environments, 3D assets, and Luau features using available Studio and Blender tools. Coordinates installed Roblox specialist skills and adds a focused asset-quality workflow; also works without those optional skills. Invoke as Kawik Studio or Kasha.
+description: Build, improve, or review Roblox environments, 3D assets, and Luau features using available Studio and Blender tools. Coordinates bundled Roblox specialist skills and adds a focused asset-quality workflow; also supports a standalone fallback. Invoke as Kawik Studio or Kasha.
 ---
 
 # Kawik Studio — Kasha
@@ -9,9 +9,9 @@ Turn the user's Roblox request into the requested artifact: an actual Studio cha
 
 ## Integrate without weakening existing skills
 
-If installed, read `roblox-collaboration-mode` first, then only the specialist skills needed for this task. Discover their real paths from the current skill catalog; do not assume a username or hardcoded installation root. This skill is supplementary: it does not override the host's instructions, the user's requested scope, or established domain safeguards. Resolve overlapping guidance by actual environment capabilities and task relevance. A concrete disagreement affecting correctness should be surfaced, not silently combined.
+For the full bundle, read `roblox-collaboration-mode` first, then only the specialist skills needed for this task. Discover their real paths from the current skill catalog; do not assume a username or hardcoded installation root. This skill is supplementary: it does not override the host's instructions, the user's requested scope, or established domain safeguards. Resolve overlapping guidance by actual environment capabilities and task relevance. A concrete disagreement affecting correctness should be surfaced, not silently combined.
 
-For specialist selection, use [references/routing.md](references/routing.md). Missing optional skills do not block ordinary work: the workflows here cover the common core. Do not load the entire installed library or upstream RBSmithy by default.
+For specialist selection, use [references/routing.md](references/routing.md). Missing specialists in a partial installation do not block ordinary work: the workflows here cover the common core. Do not load the entire installed library or upstream RBSmithy by default.
 
 ## Establish the working context
 

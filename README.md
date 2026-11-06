@@ -8,9 +8,11 @@ A practical agent skill for building Roblox environments, 3D assets, and Luau fe
 
 ## Overview
 
-Kawik Studio is a standalone skill with a concise shared workflow and focused references for modeling, live Studio work, and engineering. When specialized `roblox-*` skills are installed, it consults the relevant ones. Its core instructions also work without those optional skills.
+This is the complete 30-skill bundle: Kawik Studio (Kasha) plus all 29 Roblox specialist skills used by the author. A friend can install the same instruction set from this repository without locating separate roblox-* packages.
 
-Existing specialist skills are not bundled or modified by this package. This avoids maintaining competing copies of the same guidance. The package does not install Blender, Studio MCP, Rojo, or other tools; it uses capabilities that are actually connected.
+Kasha coordinates the relevant specialists; it does not load all 30 skills into every task. Read roblox-collaboration-mode first, then the specialist instructions needed for the requested change. The full inventory is in [skills.json](skills.json).
+
+The original specialist files are included without content changes. Studio MCP, Roblox Studio, Blender, and other tools are separate software connections: the skill bundle does not install or authenticate them. Equal skill files do not guarantee equal tool availability or results on another machine.
 
 ## Improvements
 
@@ -35,7 +37,7 @@ python3 scripts/install.py --dry-run
 python3 scripts/install.py
 ```
 
-The installer copies only `skills/kawik-studio` into the `skills` directory under `CODEX_HOME`, or into `~/.codex/skills` when that variable is unset. It refuses to overwrite an existing destination and leaves other skills untouched. To select another skills directory:
+The installer installs all 30 skills listed in `skills.json` into the `skills` directory under `CODEX_HOME`, or into `~/.codex/skills` when that variable is unset. Identical existing copies are skipped. If any existing copy differs, the installer stops before writing anything; back up or move the conflicting copy first. Unrelated skills are left untouched. Re-running the installer with matching files is safe. To select another skills directory:
 
 ```sh
 python3 scripts/install.py --destination /path/to/skills
@@ -49,17 +51,21 @@ Use $kawik-studio. Build a separate medieval blacksmith shop in the connected Ro
 
 Automatic selection is allowed but depends on the host environment and task relevance. The explicit identifier `$kawik-studio` is the clearest way to request it.
 
+When upgrading from an earlier coordinator-only bundle, back up or move the old `kawik-studio` folder before installing this version if the installer reports a conflict. Do not remove unrelated skills.
+
 ## Package structure
 
 ```text
-skills/kawik-studio/
-  SKILL.md
-  agents/openai.yaml
-  references/
-    routing.md
-    modeling.md
-    studio.md
-    engineering.md
+skills/
+  roblox-*/                 # 29 specialists, each with SKILL.md and references
+  kawik-studio/
+    SKILL.md
+    agents/openai.yaml
+    references/
+      routing.md
+      modeling.md
+      studio.md
+      engineering.md
 scripts/
   install.py
   validate.py
@@ -78,4 +84,36 @@ No command in this package creates a GitHub repository, configures a Git remote,
 
 `scripts/validate.py` checks the package structure, skill identifier, basic metadata, and local document links. These checks do not validate a Roblox game or guarantee agent behavior. See the [behavioral acceptance scenarios](docs/acceptance.md) and [packaging verification record](docs/verification.md).
 
-Sources and compatibility decisions are documented in [SOURCES.md](SOURCES.md). Independently written files in this package use the [MIT license](LICENSE). External tools, separately installed skills, and assets retain their own licenses.
+Sources and compatibility decisions are documented in [SOURCES.md](SOURCES.md). Independently written files in this package use the [MIT license](LICENSE). The MIT notice covers the independently written Kawik additions. Bundled specialist files preserve their supplied provenance and notices; no new license ownership is asserted over those files. External tools and assets retain their own licenses.
+
+## Included specialists
+
+- `roblox-analytics`
+- `roblox-animation-vfx`
+- `roblox-architecture`
+- `roblox-audio`
+- `roblox-building`
+- `roblox-camera`
+- `roblox-cloud`
+- `roblox-collaboration-mode`
+- `roblox-data`
+- `roblox-game-design`
+- `roblox-growth-design`
+- `roblox-gui`
+- `roblox-input`
+- `roblox-lighting`
+- `roblox-localization`
+- `roblox-luau-core`
+- `roblox-luau-patterns`
+- `roblox-luau-types`
+- `roblox-monetization`
+- `roblox-networking`
+- `roblox-npc-ai`
+- `roblox-performance`
+- `roblox-physics`
+- `roblox-player-psychology`
+- `roblox-publish-checklist`
+- `roblox-security`
+- `roblox-server-data`
+- `roblox-studio-mcp`
+- `roblox-tooling`

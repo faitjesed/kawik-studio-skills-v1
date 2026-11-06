@@ -1,6 +1,6 @@
-# Optional specialist routing
+# Bundled specialist routing
 
-Use the installed skill catalog to locate these skills. They are optional dependencies and are not bundled or overwritten by this package. Read only those relevant to the request.
+Use the installed skill catalog to locate these skills. All 29 roblox-* specialists listed by skills.json are bundled with this package. The installer installs the complete set without overwriting conflicting existing copies. Read only those relevant to the request.
 
 | Task | Existing specialists to consult |
 |---|---|
