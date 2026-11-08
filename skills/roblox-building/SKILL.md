@@ -57,3 +57,6 @@ Player ~5 studs | Door 4w×7h | Ceiling 10-14 | Counter 3.5-4 | Seat 1.5 | Path 
 Guessing coordinates | unanchored/duplicate parts | hardcoded world positions | silent CSG failure | oversized batches | claims without readback
 
 **Details:** `references/full.md` (maps, validation, assets).
+
+### Targeted construction checks
+For floating objects, flickering trim, arches, stairs or changed supports, read [support and surfaces](references/support-and-surfaces.md). For repeated architecture or CSG repairs, also read [construction joints](references/construction-joints.md). Load these only when relevant.
