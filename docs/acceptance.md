@@ -20,3 +20,15 @@ These are realistic manual checks of the instructions, not a claim that an autom
 ## Package checks
 
 Run `python3 scripts/validate.py`. Test installation into a temporary destination, then repeat installation and confirm identical copies are skipped. Change one installed copy and confirm the installer refuses the entire operation before installing any missing skills. Run `--dry-run` into a nonexistent destination and confirm no directory was created. These tests concern packaging and installation only.
+
+## Construction regression scenarios
+- Widen annular trim by 0.2: verify outer-minus-inner radius increases by 0.2, not merely both diameters.
+- Repair an arch sliver: preserve its rounded crown and update floor coverage; reject newly exposed threshold gaps.
+- Repair a joint twice unsuccessfully: preserve state and rebuild the module; reject endless offsets or removing required material relief.
+- Union sandstone and dark steps: inspect actual colors and close joins; reject success inferred from boolean status.
+- Seat crowds after CSG changes: verify both feet and visible tread contact; reject broad ray hits or obsolete heights as full proof.
+- Randomize spectators: inspect groups and empty places; reject repeated row/angle cycles with small jitter.
+- Move an approved preview: preserve latest user transforms; reject redesigning layout to fix height.
+- Optimize unseen exterior: back up and compare interior views; reject part counts as FPS evidence.
+
+These scenarios require behavioral evaluation; their presence does not mean a Studio test passed.

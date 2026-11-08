@@ -46,3 +46,10 @@ Prefer simple collision proxies for decorative or intricate geometry when detail
 Combine structural queries, targeted collision/support checks, and visual views. Inspect representative assets close up, joins in motion, player eye level, a third-person view, and an overview. Audit boundary gaps and all meaningful route connections, including returns.
 
 Fix observed defects before declaring the section done. For large scenes, report which sections and paths were actually sampled. A clean bounding-box report cannot establish that every irregular model is grounded. Distinguish observed rendering counts from FPS measurements and device benchmarks.
+
+## Construction defects and repeated modules
+For contact and surface problems, read [support and surfaces](../../roblox-building/references/support-and-surfaces.md). For arches, stairs, material boundaries and repeated CSG repairs, read [construction joints](../../roblox-building/references/construction-joints.md). In a partial installation, use the local guidance here if those optional references are absent.
+
+Finish one representative artistic module before repeating it: inspect silhouette, scale, material variants, detail density and player-facing composition. Color swaps alone do not establish distinct themes. Preserve the project's actual style; StudsPack is a project choice, not a universal requirement.
+
+When integrating a preview, inspect destination ground, old paths, structures, approach and orientation. Preserve the user's latest transforms and accepted layout. Recompute dependent geometry after changing dimensions or support heights.

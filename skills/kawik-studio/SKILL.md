@@ -34,3 +34,5 @@ For specialist selection, use [references/routing.md](references/routing.md). Mi
 Scale evidence to the change. A relocated sign needs placement/readback; a room connection needs avatar clearance and traversal; a purchase or persistence change needs the relevant domain workflow. Use runtime and visual evidence where those are what establishes success. Do not claim multiplayer, mobile, performance, or geometry correctness from static counts alone.
 
 Report the implemented result, meaningful checks, and any remaining limitations in the user's language. Keep routine work concise; reserve full asset briefs, budgets, scored reviews, or release checklists for tasks that need them. Do not add unrelated economy, analytics, localization, release, or multi-agent work to a small edit.
+
+For construction defects, follow the targeted surface/joint references linked from modeling.md. After two failed repairs of one joint, diagnose and rebuild the local module rather than repeating unverified offsets or cuts.
